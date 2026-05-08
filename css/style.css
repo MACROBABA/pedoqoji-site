@@ -2547,27 +2547,37 @@ html {
 }
 @media (max-width: 768px) {
   .hero-video {
-    height: 75vh;
-    min-height: 520px;
+    height: auto;
+    min-height: 0;
+    background: #0b3d70;
   }
 
   .hero-bg-video {
+    position: relative;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 35% center;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .hero-overlay {
+    display: none;
   }
 
   .hero-content-left {
-    padding-left: 24px;
-    padding-right: 24px;
+    position: absolute;
+    left: 0;
+    top: 28%;
+    padding: 0 24px;
   }
 
   .hero-line-1 {
-    font-size: 38px;
+    font-size: 34px;
+    line-height: 1.05;
   }
 
   .hero-line-2 {
-    font-size: 28px;
+    font-size: 24px;
+    line-height: 1.1;
   }
 }
