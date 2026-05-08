@@ -2545,3 +2545,29 @@ html {
   object-fit: cover;
   object-position: 50% 85%;
 }
+@media (max-width: 768px) {
+  .hero-video {
+    height: 75vh;
+    min-height: 520px;
+  }
+
+  .hero-bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .hero-content-left {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .hero-line-1 {
+    font-size: 38px;
+  }
+
+  .hero-line-2 {
+    font-size: 28px;
+  }
+}
