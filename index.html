@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Wise Intellectual Teachers müəllimlərin inkişafını, intellektual fəaliyyətlərini və peşəkar bacarıqlarını dəstəkləyən platformadır.">
   <title>Wise Intellectual Teachers | Müəllimlərin İnkişaf Platforması</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="canonical" href="https://pedaqoji.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Wise Intellectual Teachers">
+  <meta property="og:locale" content="az_AZ">
+  <meta property="og:url" content="https://pedaqoji.com/">
+  <meta property="og:title" content="Wise Intellectual Teachers | Müəllimlərin İnkişaf Platforması">
+  <meta property="og:description" content="Wise Intellectual Teachers müəllimlərin inkişafını, intellektual fəaliyyətlərini və peşəkar bacarıqlarını dəstəkləyən platformadır.">
+  <meta property="og:image" content="https://pedaqoji.com/images/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wise Intellectual Teachers | Müəllimlərin İnkişaf Platforması">
+  <meta name="twitter:description" content="Wise Intellectual Teachers müəllimlərin inkişafını, intellektual fəaliyyətlərini və peşəkar bacarıqlarını dəstəkləyən platformadır.">
+  <meta name="twitter:image" content="https://pedaqoji.com/images/logo.png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -19,26 +32,25 @@
 
   <div class="top-right">
     <div class="top-socials">
-      <a href="https://www.instagram.com/wise.intellectual.teachers/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-       <a href="tel:+994504452719" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=61556930971408" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="https://www.linkedin.com/in/wit-wise-intellectual-teachers-141a02337/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="https://www.tiktok.com/@wiseintellectualteacher" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="https://t.me/wiseintellectualteacher" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-      <a href="https://www.youtube.com/@wise.intellectual.teacher" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.instagram.com/wise.intellectual.teachers/" target="_blank" aria-label="Instagram" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+       <a href="https://wa.me/994504452719" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61556930971408" target="_blank" aria-label="Facebook" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.linkedin.com/in/wit-wise-intellectual-teachers-141a02337/" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.tiktok.com/@wiseintellectualteacher" target="_blank" aria-label="TikTok" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://t.me/wiseintellectualteacher" target="_blank" aria-label="Telegram" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i></a>
+      <a href="https://www.youtube.com/@wise.intellectual.teacher" target="_blank" aria-label="YouTube" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
     </div>
 
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwmLlWPFZYaYbr8I74E59EsU4DYSwD8adoqw8Qj6c9Z5VaPg/viewform?pli=1"
        target="_blank"
+       rel="noopener noreferrer"
        class="top-apply-btn">
       Müraciət et
     </a>
   </div>
 </div>
     <div class="main-header">
-      <div class="hamburger" id="hamburger">
-  <i class="fa-solid fa-bars"></i>
-</div>
+      <button type="button" class="hamburger" id="hamburger" aria-label="Menyunu aç" aria-expanded="false" aria-controls="main-nav"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
       <div class="brand">
         <img src="images/logo.png" alt="WISE logo" class="logo">
         <span class="brand-divider"></span>
@@ -47,7 +59,7 @@
         </a>
       </div>
 
-      <nav class="main-nav">
+      <nav class="main-nav" id="main-nav" aria-label="Əsas naviqasiya">
         <ul>
           <li><a href="index.html">Ana səhifə</a></li>
           <li><a href="about.html">Haqqımızda</a></li>
@@ -63,11 +75,12 @@
 
 <section class="hero-video">
 
-  <video autoplay muted loop playsinline class="hero-bg-video">
-    <source src="video/wit-video.mp4" type="video/mp4">
+  <video muted loop playsinline preload="none" poster="images/hero-poster.jpg" class="hero-bg-video" aria-hidden="true">
+    <source src="video/wit-video-optimized.mp4" type="video/mp4">
   </video>
 
   <div class="hero-overlay"></div>
+  <button type="button" class="video-toggle" aria-label="Videonu oynat">Videonu oynat</button>
 
   <div class="hero-content hero-content-left">
     <span class="hero-accent-line"></span>
@@ -111,7 +124,7 @@
 
       <div class="about-image">
         <a href="about.html">
-          <img src="images/ag-zanbalar.jpg" alt="Haqqımızda şəkli">
+          <img loading="lazy" src="images/ag-zanbalar.jpg" alt="Haqqımızda şəkli">
         </a>
       </div>
 
@@ -171,12 +184,12 @@
     <div class="activities-cards">
 
       <div class="activity-card reveal">
-        <img src="images/Seminar.jpg" alt="Seminar və Təlim">
+        <img loading="lazy" src="images/Seminar.jpg" alt="Seminar və Təlim">
         <div class="activity-content">
-          <span class="activity-date">10 May 2026</span>
+          <span class="activity-date">Davam edir</span>
           <h3>Seçilən müəllim</h3>
           <p class="activity-text border-style"> 
-            <span class="highlight">Praktik bacarıqlara əsaslanan müsabiqə, burada videodərs izah olunur, 
+            <span class="highlight">Praktik bacarıqlara əsaslanan müsabiqə, burada videodərs izah olunur,</span> 
 
             <span class="accent">müasir üsullardan istifadə olunur, real təcrübə qazanılır.</span>
           </p>
@@ -185,7 +198,7 @@
       </div>
 
       <div class="activity-card reveal">
-        <img src="images/about.jpg" alt="İnfotur">
+        <img loading="lazy" src="images/about.jpg" alt="İnfotur">
         <div class="activity-content">
           <span class="activity-date">Aprel-Noyabr 2026</span>
           <h3>Təhsil yolunda</h3>
@@ -200,7 +213,7 @@
       </div>
 
       <div class="activity-card reveal">
-        <img src="images/miras.1.jpg" alt="İnfotur">
+        <img loading="lazy" src="images/miras.1.jpg" alt="İnfotur">
         <div class="activity-content">
           <span class="activity-date">5 Oktyabr 2026</span>
           <h3>Təhsil mirası</h3>
@@ -228,41 +241,31 @@
       <div class="events-cards">
 
         <div class="event-card reveal seminar-card">
-          <img src="images/s.t.v.png" alt="Təhsil layihələrini idarə edilməsi">
+          <img loading="lazy" src="images/s.t.v.png" alt="Təhsil layihələrini idarə edilməsi">
           <div class="event-content">
-            <span class="event-date">3 May 2026</span>
+            <span class="event-date">Mütəmadi keçirilir</span>
             <h3>Seminar, Təlim və vebinar</h3>
-<p class="event-text border-style">
-  <span class="highlight">Bu fəaliyyət çərçivəsində iştirakçılara</span> müxtəlif mövzularda həm nəzəri, həm də praktiki biliklər təqdim olunur. Seminarlar daha çox məlumatlandırıcı xarakter daşıyır, təlimlər isə əldə olunan biliklərin tətbiqinə və bacarıqların inkişafına yönəlib. 
-  <span class="accent">Tədbirlər təhsil, pedaqogika və şəxsi inkişaf istiqamətlərini əhatə edir və interaktiv üsullarla keçirilir. 
-  </span> Bu fəaliyyət davamlı öyrənmə, özünü inkişaf və müasir biliklərə əlçatanlıq üçün effektiv mühit yaradır.
-</p>
+<p class="event-text border-style">Seminar, təlim və vebinarlarımızda pedaqogika və şəxsi inkişaf mövzularında nəzəri bilik və praktik bacarıqlar qazanın.</p>
             <a href="events.html#seminar"  class="event-btn">Ətraflı bax</a>
           </div>
         </div>
 
        <div class="event-card reveal">
-          <img src="images/tt.jpeg" alt="Təhsil layihələrini idarə edilməsi">
+          <img loading="lazy" src="images/tt.jpeg" alt="Təhsil layihələrini idarə edilməsi">
           <div class="event-content">
-            <span class="event-date">12 Aprel 2026</span>
+            <span class="event-date">Mütəmadi keçirilir</span>
             <h3>Teacher's talk</h3>
-<p class="event-text border-style">
-  <span class="highlight">Talkshow formatlı görüşlərdə</span> müxtəlif sahələrdən olan mütəxəssislər dəvət olunur və aktual mövzular ətrafında açıq müzakirələr aparılır.
-  <span class="accent">Bu fəaliyyət kommunikasiya bacarıqlarını inkişaf etdirir</span>  və iştirakçılara fərqli təcrübələrdən öyrənmək imkanı yaradır.
-</p>
+<p class="event-text border-style">Mütəxəssislərlə aktual mövzuları müzakirə edin, suallarınızı verin və fərqli təcrübələrdən öyrənin.</p>
             <a href="events.html#teacher-talk" class="event-btn">Ətraflı bax</a>
           </div>
         </div>
 
         <div class="event-card reveal">
-          <img src="images/m.s.jpeg" alt="Təhsil layihələrini idarə edilməsi">
+          <img loading="lazy" src="images/m.s.jpeg" alt="Təhsil layihələrini idarə edilməsi">
           <div class="event-content">
-            <span class="event-date">5 Aprel 2026</span>
+            <span class="event-date">Mütəmadi keçirilir</span>
             <h3>Məktəb Simulyasiyası</h3>
-<p class="event-text border-style">
-  <span class="highlight">Məktəb simulyasiyası iştirakçılara real məktəb mühitini</span> təcrübədən keçirmək imkanı yaradan praktiki fəaliyyətdir. Bu proses zamanı iştirakçılar müəllim rolunda çıxış edərək dərs keçmə,
-  <span class="accent">sinfi idarə etmə və şagirdlərlə ünsiyyət qurma bacarıqlarını tətbiq edirlər. Simulyasiya real pedaqoji situasiyaları canlandıraraq</span> gələcək müəllimlərin peşəkar bacarıqlarını inkişaf etdirməyə kömək edir.
-</p>
+<p class="event-text border-style">Müəllim rolunda dərs keçmə, sinfi idarəetmə və şagirdlərlə ünsiyyət bacarıqlarınızı praktik situasiyalarda sınayın.</p>
             <a href="events.html#simulation" class="event-btn">Ətraflı bax</a>
           </div>
         </div>
@@ -327,7 +330,7 @@
   <span class="cta-arrow">→</span>
 </a>
 
-  <footer class="site-footer">
+  <footer class="site-footer" id="footer">
     <div class="footer-top reveal">
 
       <div class="footer-column footer-info">
@@ -366,13 +369,13 @@
       <div class="footer-column footer-social">
         <h3>Bizi sosial mediada izləyin</h3>
         <div class="social-icons">
-          <a href="https://www.instagram.com/wise.intellectual.teachers/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.whatsapp.com/channel/0029Va7wLPCCxoAy29YNWn3n" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=61556930971408&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.linkedin.com/in/wit-wise-intellectual-teachers-141a02337/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://www.tiktok.com/@wiseintellectualteacher?_t=8reifjyna4m&_r=1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="https://t.me/wiseintellectualteacher" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i></a>
-          <a href="https://www.youtube.com/@wise.intellectual.teacher" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/wise.intellectual.teachers/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.whatsapp.com/channel/0029Va7wLPCCxoAy29YNWn3n" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61556930971408&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/wit-wise-intellectual-teachers-141a02337/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.tiktok.com/@wiseintellectualteacher?_t=8reifjyna4m&_r=1" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://t.me/wiseintellectualteacher" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="https://www.youtube.com/@wise.intellectual.teacher" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </div>
 
@@ -391,7 +394,7 @@
     <div class="footer-bottom">
       <p>© 2026 Wise Intellectual Teachers. Bütün hüquqlar qorunur.</p>
     </div>
- <footer id="footer">
+ </footer>
 
   <script src="js/script.js"></script>
 <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Yuxarı qalx">

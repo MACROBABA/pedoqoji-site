@@ -1,0 +1,10 @@
+{
+  "hints": {
+    "compat-api/html": [
+      "warning",
+      {
+        "ignore": ["video[playsinline]"]
+      }
+    ]
+  }
+}
